@@ -1,0 +1,292 @@
+env:
+  node: true
+
+# enable ECMAScript features
+ecmaFeatures:
+  arrowFunctions: true
+  binaryLiterals: true
+  blockBindings: true
+  classes: true
+  forOf: true
+  generators: true
+  objectLiteralShorthandMethods: true
+  objectLiteralShorthandProperties: true
+  octalLiterals: true
+  templateStrings: true
+
+rules:
+  # Strict Mode
+  # list: https://github.com/eslint/eslint/tree/master/docs/rules#strict-mode
+  ## 'use strict' on top
+  strict: [2, "global"]
+
+  # Possible Errors
+  # list: https://github.com/eslint/eslint/tree/master/docs/rules#possible-errors
+  ## enforce dangling commas
+  comma-dangle: [2, "always-multiline"]
+  ## disallow assignment in conditional statements
+  no-cond-assign: [2, "always"]
+  ## warning on console
+  no-console: 1
+  ## check debugger sentence
+  no-debugger: 2
+  ## disallow constant expressions in conditions
+  no-constant-condition: 1
+  ## disallow control characters in regex
+  no-control-regex: 1
+  ## check duplicate arguments
+  no-dupe-args: 2
+  ## check duplicate object keys
+  no-dupe-keys: 2
+  ## check duplicate switch-case
+  no-duplicate-case: 2
+  ## disallow empty character classes in regex
+  no-empty-character-class: 1
+  ## disallow empty blocks
+  no-empty: 2
+  ## disallow assignment of exceptional params
+  no-ex-assign: 2
+  ## disallow extra boolean casts
+  no-extra-boolean-cast: 2
+  ## disallow extra semicolons
+  no-extra-semi: 2
+  ## disallow function assignment
+  no-func-assign: 2
+  ## declarations should be in program of function body
+  no-inner-declarations: 2
+  ## disallow invalid regexp
+  no-invalid-regexp: 2
+  ## disallow irregular whitespaces
+  no-irregular-whitespace: 2
+  ## disallow global object function calls
+  no-obj-calls: 2
+  ## disallow sparse arrays
+  no-sparse-arrays: 2
+  ## disallow unreachable code
+  no-unreachable: 2
+  ## isnan should be used for nan compare
+  use-isnan: 2
+  ## check for valid jsdoc
+  valid-jsdoc: 2
+  ## require valid typeof compared string like typeof foo === 'strnig'
+  valid-typeof: 2
+
+  # Best Practices
+  # list: https://github.com/eslint/eslint/tree/master/docs/rules#best-practices
+  ## if setter exists, getter should be added also
+  accessor-pairs: 2
+  ## disallow inconsistent returns
+  consistent-return: 2
+  ## require curly braces
+  curly: [2, "all"]
+  ## default case is required in all switches
+  default-case: 2
+  ## require dot notation
+  dot-notation: 2
+  ## requires the dot to be on the same line as the property
+  dot-location: [2, "property"]
+  ## enforces the use of ===
+  eqeqeq: 2
+  ## require guarding for-in
+  guard-for-in: 2
+  ## disallow the use of alert
+  no-alert: 1
+  ## disallow use of caller/callee
+  no-caller: 2
+  ## Disallow 'function() { return /=foo/; }'
+  no-div-regex: 2
+  ## disallow return in else
+  no-else-return: 2
+  ## disallow null comparisons
+  no-eq-null: 2
+  ## disallow eval
+  no-eval: 2
+  ## disallow native prototype extends
+  no-extend-native: 2
+  ## extra bind if ok (for consistent coroutine look)
+  no-extra-bind: 0
+  ## require falls through comment on switch-case
+  no-fallthrough: 2
+  ## disallow floating decimals
+  no-floating-decimal: 2
+  ## disallow implied eval
+  no-implied-eval: 2
+  ## disallow unnecessary nested blocks
+  no-lone-blocks: 2
+  ## allow functions in loops (because var is disabled)
+  no-loop-func: 0
+  ## checks for multiple spaces
+  no-multi-spaces: 1
+  ## disallow multiline strings
+  no-multi-str: 2
+  ## disallow reassignment of native objects
+  no-native-reassign: 2
+  ## disallow 'new Function'
+  no-new-func: 2
+  ## disallow primitive wrapper instances
+  no-new-wrappers: 2
+  ## disallow new for side effects
+  no-new: 2
+  ## disallow octal escapes
+  no-octal-escape: 2
+  ## disallow octal literals
+  no-octal: 2
+  ## disallow reassignment of function parameters
+  no-param-reassign: 2
+  ## disallow process.env
+  no-process-env: 1
+  ## disallow __proto__
+  no-proto: 2
+  ## disallow redeclaring variables
+  no-redeclare: 2
+  ## disallow assignment in return statement
+  no-return-assign: 2
+  ## disallow self compare
+  no-self-compare: 2
+  ## disallow use of the comma operator
+  no-sequences: 2
+  ## restrict what can be thrown as an exception
+  no-throw-literal: 2
+  ## no with statements
+  no-with: 2
+  ## require radix parameter
+  radix: 2
+  ## require iifes to be wrapped
+  wrap-iife: [2, "inside"]
+  ## disallow yoda conditions
+  yoda: 2
+
+  # Variables
+  # list: https://github.com/eslint/eslint/tree/master/docs/rules#variables
+  ## disallow variables deletion
+  no-delete-var: 2
+  ## disallow shadowing of restricted names
+  no-shadow-restricted-names: 2
+  ## disallow shadowing
+  no-shadow: 2
+  ## no 'var foo = undefined;'
+  no-undef-init: 2
+  ## disallow use of undefined variables (globals)
+  no-undef: 2
+  ## no 'var undefined = 5'
+  no-undefined: 2
+  ## disallow unused variables
+  no-unused-vars: [2, { "vars": "local", "args": "after-used" }]
+  ## disallow early use
+  no-use-before-define: [2, "nofunc"]
+
+  # Node.js
+  ## always 'return callback()' if not on fn's main body
+  callback-return: 1
+  ## always check 'if(err){ ... }'
+  handle-callback-err: 1
+  ## forbid 'new require(...)'
+  no-new-require: 2
+  ## no '__dirname + blabla'
+  no-path-concat: 1
+  ## use trap-module
+  no-process-exit: 1
+
+  # Stylistic Issues
+  # list: https://github.com/eslint/eslint/tree/master/docs/rules#stylistic-issues
+  ## disallow [ 0, 1 ], accept [0, 1]
+  array-bracket-spacing: [2, "never"]
+  ## require brace style
+  brace-style: [2, "1tbs", { "allowSingleLine": true }]
+  ## require camelcase
+  camelcase: [2, { "properties": "never" }]
+  ## enforces spacing around commas
+  comma-spacing: [2, { "before": false, "after": true }]
+  ## comma style
+  comma-style: [2, "last"]
+  ## do not use spaces on 'myObj[ myProp ]'
+  computed-property-spacing: 2
+  ## require consistent this
+  consistent-this: [2, "self"]
+  ## require newline at end of files
+  eol-last: 2
+  ## require function expressions to have a name
+  func-names: 1
+  ## forbid var fn = function () { ... }
+  func-style: [2, "declaration"]
+  ## 2 space indentation
+  indent: [2, 2]
+  ## enforce property spacing
+  key-spacing: [2, { "beforeColon": false, "afterColon": true }]
+  ## max 4 depth callback
+  max-nested-callbacks: [2, 4]
+  ## Require Constructors to Use Initial Caps
+  new-cap: [2, { "newIsCap": true }]
+  ## require parens for Constructor
+  new-parens: 2
+  ## use [] instead
+  no-array-constructor: 2
+  ## no 'if() {} else { if() { ... }}''
+  no-lonely-if: 2
+  ## git-diff friendly code
+  no-mixed-spaces-and-tabs: 2
+  ## max 2 consecutive empty lines
+  no-multiple-empty-lines: [2, {max: 2}]
+  ## disallow nested ternaries
+  no-nested-ternary: 2
+  ## disallow the use of the object constructor
+  no-new-object: 2
+  ## disallow spaces in function calls
+  no-spaced-func: 2
+  ## no trailing spaces
+  no-trailing-spaces: 2
+  ## disallow extra parens
+  no-extra-parens: [2, "functions"]
+  ## allow underscore dangle
+  no-underscore-dangle: 0
+  ## disallow conditional expressions that can be expressed with simpler constructs
+  no-unneeded-ternary: 2
+  ## enforce spaces inside of curly braces in objects
+  object-curly-spacing: [2, "always"]
+  ## disallow one variable declaration per scope
+  one-var: [2, "never"]
+  ## operator linebreak
+  operator-linebreak: [2, "after"]
+  ## disallow padding within blocks
+  padded-blocks: [2, "never"]
+  ## max 120 length
+  max-len: [2, 120, 2]
+  ## use single quote, we can use double quote when escape chars
+  quotes: [2, "single", "avoid-escape"]
+  ## enforce spacing after semicolons
+  semi-spacing: [2, { "before": false, "after": true }]
+  ## put semi-colon
+  semi: [2, "always"]
+  # require space after keywords, eg 'for (..)'
+  space-after-keywords: 2
+  ## require space before blocks, eg 'function() {'
+  space-before-blocks: [2, "always"]
+  ## no space before function, eg. 'function()'
+  space-before-function-paren: [2, "never"]
+  ## disallow '( something )'
+  space-in-parens: [2, "never"]
+  ## require spaces operator like var sum = 1 + 1;
+  space-infix-ops: 2
+  ## require spaces return, throw, case
+  space-return-throw-case: 2
+
+  # ECMAScript 6
+  # list: http://eslint.org/docs/rules/#ecmascript-6
+  ## super must be called in derived classes
+  constructor-super: 2
+  ## disallow class assign
+  no-class-assign: 2
+  ## disallow const assign
+  no-const-assign: 2
+  ## disallow use of this or super before calling super in constructor
+  no-this-before-super: 2
+  ## space before and after '=>'
+  arrow-spacing: 2
+  ## disallows var usage
+  no-var: 2
+  ## Suggest using 'const' wherever possible
+  prefer-const: 2
+  ## checks if generators contains yields
+  require-yield: 0
+  ## generators should look like "function * generatorName() { ... }"
+  generator-star-spacing: [2, "both"]

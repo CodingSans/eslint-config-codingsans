@@ -1,0 +1,19 @@
+{
+  "name": "eslint-config-codingsans",
+  "version": "0.0.2",
+  "description": "CodingSans Eslint config",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit 0",
+    "generate": "eslint-sharable-config-generator ./src/ ."
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "author": "LaTotty <latotty@codingsans.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-sharable-config-generator": "^1.0.1"
+  }
+}
