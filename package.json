@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-codingsans",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "CodingSans Eslint config",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
   "license": "MIT",
   "repository": "CodingSans/eslint-config-codingsans",
   "bugs": {
-    "url" : "https://github.com/CodingSans/eslint-config-codingsans/issues"
+    "url": "https://github.com/CodingSans/eslint-config-codingsans/issues"
   },
   "devDependencies": {
     "eslint-sharable-config-generator": "^1.0.1"
