@@ -1,0 +1,51 @@
+rules:
+  # Possible Errors
+  # list: https://github.com/eslint/eslint/tree/master/docs/rules#possible-errors
+  ## enforce dangling commas
+  comma-dangle: [2, "always-multiline"]
+  ## disallow assignment in conditional statements
+  no-cond-assign: [2, "always"]
+  ## warning on console
+  no-console: 1
+  ## check debugger sentence
+  no-debugger: 2
+  ## disallow constant expressions in conditions
+  no-constant-condition: 1
+  ## disallow control characters in regex
+  no-control-regex: 1
+  ## check duplicate arguments
+  no-dupe-args: 2
+  ## check duplicate object keys
+  no-dupe-keys: 2
+  ## check duplicate switch-case
+  no-duplicate-case: 2
+  ## disallow empty character classes in regex
+  no-empty-character-class: 1
+  ## disallow empty blocks
+  no-empty: 2
+  ## disallow assignment of exceptional params
+  no-ex-assign: 2
+  ## disallow extra boolean casts
+  no-extra-boolean-cast: 2
+  ## disallow extra semicolons
+  no-extra-semi: 2
+  ## disallow function assignment
+  no-func-assign: 2
+  ## declarations should be in program of function body
+  no-inner-declarations: 2
+  ## disallow invalid regexp
+  no-invalid-regexp: 2
+  ## disallow irregular whitespaces
+  no-irregular-whitespace: 2
+  ## disallow global object function calls
+  no-obj-calls: 2
+  ## disallow sparse arrays
+  no-sparse-arrays: 2
+  ## disallow unreachable code
+  no-unreachable: 2
+  ## isnan should be used for nan compare
+  use-isnan: 2
+  ## check for valid jsdoc
+  valid-jsdoc: 2
+  ## require valid typeof compared string like typeof foo === 'string'
+  valid-typeof: 2

@@ -1,0 +1,36 @@
+# Mocha testing specific extension
+
+env:
+  ## http://eslint.org/docs/user-guide/configuring.html#specifying-environments
+  ## adds all of the Mocha testing global variables.
+  mocha: true
+
+rules:
+  ## Require Function Expressions to have a Name
+  ## https://github.com/eslint/eslint/blob/master/docs/rules/func-names.md
+  ## For testing it's turned off (because of generators)
+  func-names: 0
+  ## Set Maximum Depth of Nested Callbacks
+  ## https://github.com/eslint/eslint/blob/master/docs/rules/max-nested-callbacks.md
+  ## Turned off for testing reasons
+  max-nested-callbacks: 0
+  ## Limit Maximum Depth
+  ## https://github.com/eslint/eslint/blob/master/docs/rules/max-depth.md
+  ## Turned off for testing reasons
+  max-depth: 0
+  ## Limit Maximum Length of Line
+  ## https://github.com/eslint/eslint/blob/master/docs/rules/max-len.md
+  ## Turned off for testing reasons
+  max-len: 0
+  ## Limit Maximum Number of Parameters
+  ## https://github.com/eslint/eslint/blob/master/docs/rules/max-params.md
+  ## Turned off for testing reasons
+  max-params: 0
+  ## Limit Maximum Number of Statements
+  ## https://github.com/eslint/eslint/blob/master/docs/rules/max-statements.md
+  ## Turned off for testing reasons
+  max-statements: 0
+  ## Require Constructors to Use Initial Caps
+  ## https://github.com/eslint/eslint/blob/master/docs/rules/new-cap.md
+  ## Turned off for testing reasons
+  new-cap: 0

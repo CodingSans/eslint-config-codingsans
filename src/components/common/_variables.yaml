@@ -1,0 +1,19 @@
+rules:
+  # Variables
+  # list: https://github.com/eslint/eslint/tree/master/docs/rules#variables
+  ## disallow variables deletion
+  no-delete-var: 2
+  ## disallow shadowing of restricted names
+  no-shadow-restricted-names: 2
+  ## disallow shadowing
+  no-shadow: 2
+  ## no 'var foo = undefined;'
+  no-undef-init: 2
+  ## disallow use of undefined variables (globals)
+  no-undef: 2
+  ## no 'var undefined = 5'
+  no-undefined: 2
+  ## disallow unused variables
+  no-unused-vars: [2, { "vars": "local", "args": "after-used" }]
+  ## disallow early use
+  no-use-before-define: [2, "nofunc"]

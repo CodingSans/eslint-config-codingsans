@@ -1,0 +1,83 @@
+rules:
+  # Stylistic Issues
+  # list: https://github.com/eslint/eslint/tree/master/docs/rules#stylistic-issues
+  ## disallow [ 0, 1 ], accept [0, 1]
+  array-bracket-spacing: [2, "never"]
+  ## require brace style
+  brace-style: [2, "1tbs", { "allowSingleLine": true }]
+  ## require camelcase
+  camelcase: [2, { "properties": "never" }]
+  ## enforces spacing around commas
+  comma-spacing: [2, { "before": false, "after": true }]
+  ## comma style
+  comma-style: [2, "last"]
+  ## do not use spaces on 'myObj[ myProp ]'
+  computed-property-spacing: 2
+  ## require consistent this
+  consistent-this: [2, "self"]
+  ## require newline at end of files
+  eol-last: 2
+  ## require function expressions to have a name
+  func-names: 1
+  ## forbid var fn = function () { ... }
+  func-style: [2, "declaration"]
+  ## 2 space indentation
+  indent: [2, 2, { "SwitchCase": 1 }]
+  ## enforce property spacing
+  key-spacing: [2, { "beforeColon": false, "afterColon": true }]
+  ## max 4 depth callback
+  max-nested-callbacks: [2, 4]
+  ## Require Constructors to Use Initial Caps
+  new-cap: [2, { "newIsCap": true }]
+  ## require parens for Constructor
+  new-parens: 2
+  ## use [] instead
+  no-array-constructor: 2
+  ## no 'if() {} else { if() { ... }}''
+  no-lonely-if: 2
+  ## git-diff friendly code
+  no-mixed-spaces-and-tabs: 2
+  ## max 2 consecutive empty lines
+  no-multiple-empty-lines: [2, {max: 2}]
+  ## disallow nested ternaries
+  no-nested-ternary: 2
+  ## disallow the use of the object constructor
+  no-new-object: 2
+  ## disallow spaces in function calls
+  no-spaced-func: 2
+  ## no trailing spaces
+  no-trailing-spaces: 2
+  ## disallow extra parens
+  no-extra-parens: [2, "functions"]
+  ## allow underscore dangle
+  no-underscore-dangle: 0
+  ## disallow conditional expressions that can be expressed with simpler constructs
+  no-unneeded-ternary: 2
+  ## enforce spaces inside of curly braces in objects
+  object-curly-spacing: [2, "always"]
+  ## disallow one variable declaration per scope
+  one-var: [2, "never"]
+  ## operator linebreak
+  operator-linebreak: [2, "after"]
+  ## disallow padding within blocks
+  padded-blocks: [2, "never"]
+  ## max 120 length
+  max-len: [2, 120, 2]
+  ## use single quote, we can use double quote when escape chars
+  quotes: [2, "single", "avoid-escape"]
+  ## enforce spacing after semicolons
+  semi-spacing: [2, { "before": false, "after": true }]
+  ## put semi-colon
+  semi: [2, "always"]
+  # require space after keywords, eg 'for (..)'
+  space-after-keywords: 2
+  ## require space before blocks, eg 'function() {'
+  space-before-blocks: [2, "always"]
+  ## no space before function, eg. 'function()'
+  space-before-function-paren: [2, "never"]
+  ## disallow '( something )'
+  space-in-parens: [2, "never"]
+  ## require spaces operator like var sum = 1 + 1;
+  space-infix-ops: 2
+  ## require spaces return, throw, case
+  space-return-throw-case: 2

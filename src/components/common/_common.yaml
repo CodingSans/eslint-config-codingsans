@@ -1,0 +1,5 @@
+extends:
+  - ./_possibleErrors.yaml
+  - ./_bestPractices.yaml
+  - ./_variables.yaml
+  - ./_stylisticIssues.yaml

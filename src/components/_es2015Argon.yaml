@@ -1,0 +1,13 @@
+extends:
+  - ./es2015/_argonFeatures.yaml
+  - ./es2015/_commonRules.yaml
+
+rules:
+  ##############################
+  # Strict Mode
+  # list: https://github.com/eslint/eslint/tree/master/docs/rules#strict-mode
+  ##############################
+  ## Strict Mode
+  ## https://github.com/eslint/eslint/blob/master/docs/rules/strict.md
+  ## always declare 'use strict' on top
+  strict: [2, "global"]

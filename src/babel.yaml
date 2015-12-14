@@ -1,0 +1,4 @@
+extends:
+  - ./components/common/_common.yaml
+  - ./components/_node.yaml
+  - ./components/_babel.yaml

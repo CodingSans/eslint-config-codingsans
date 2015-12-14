@@ -1,0 +1,85 @@
+rules:
+  # Best Practices
+  # list: https://github.com/eslint/eslint/tree/master/docs/rules#best-practices
+  ## if setter exists, getter should be added also
+  accessor-pairs: 2
+  ## disallow inconsistent returns
+  consistent-return: 2
+  ## require curly braces
+  curly: [2, "all"]
+  ## default case is required in all switches
+  default-case: 2
+  ## require dot notation
+  dot-notation: 2
+  ## requires the dot to be on the same line as the property
+  dot-location: [2, "property"]
+  ## enforces the use of ===
+  eqeqeq: 2
+  ## require guarding for-in
+  guard-for-in: 2
+  ## disallow the use of alert
+  no-alert: 1
+  ## disallow use of caller/callee
+  no-caller: 2
+  ## Disallow 'function() { return /=foo/; }'
+  no-div-regex: 2
+  ## disallow return in else
+  no-else-return: 2
+  ## disallow null comparisons
+  no-eq-null: 2
+  ## disallow eval
+  no-eval: 2
+  ## disallow native prototype extends
+  no-extend-native: 2
+  ## extra bind if ok (for consistent coroutine look)
+  no-extra-bind: 0
+  ## require falls through comment on switch-case
+  no-fallthrough: 2
+  ## disallow floating decimals
+  no-floating-decimal: 2
+  ## disallow implied eval
+  no-implied-eval: 2
+  ## disallow unnecessary nested blocks
+  no-lone-blocks: 2
+  ## allow functions in loops (because var is disabled)
+  no-loop-func: 0
+  ## checks for multiple spaces
+  no-multi-spaces: 1
+  ## disallow multiline strings
+  no-multi-str: 2
+  ## disallow reassignment of native objects
+  no-native-reassign: 2
+  ## disallow 'new Function'
+  no-new-func: 2
+  ## disallow primitive wrapper instances
+  no-new-wrappers: 2
+  ## disallow new for side effects
+  no-new: 2
+  ## disallow octal escapes
+  no-octal-escape: 2
+  ## disallow octal literals
+  no-octal: 2
+  ## disallow reassignment of function parameters
+  no-param-reassign: 2
+  ## disallow process.env
+  no-process-env: 1
+  ## disallow __proto__
+  no-proto: 2
+  ## disallow redeclaring variables
+  no-redeclare: 2
+  ## disallow assignment in return statement
+  no-return-assign: 2
+  ## disallow self compare
+  no-self-compare: 2
+  ## disallow use of the comma operator
+  no-sequences: 2
+  ## restrict what can be thrown as an exception
+  no-throw-literal: 2
+  ## no with statements
+  no-with: 2
+  ## require radix parameter
+  radix: 2
+  ## require iifes to be wrapped
+  wrap-iife: [2, "inside"]
+  ## disallow yoda conditions
+  yoda: 2
