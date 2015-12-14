@@ -13,6 +13,10 @@
   ],
   "author": "LaTotty <latotty@codingsans.com>",
   "license": "MIT",
+  "repository": "CodingSans/eslint-config-codingsans",
+  "bugs": {
+    "url" : "https://github.com/CodingSans/eslint-config-codingsans/issues"
+  },
   "devDependencies": {
     "eslint-sharable-config-generator": "^1.0.1"
   }
