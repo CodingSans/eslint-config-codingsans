@@ -19,5 +19,8 @@
   },
   "devDependencies": {
     "eslint-sharable-config-generator": "^1.0.1"
+  },
+  "peerDependencies": {
+    "eslint": "^1.10.3"
   }
 }
