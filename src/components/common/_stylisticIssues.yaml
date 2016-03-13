@@ -28,7 +28,7 @@ rules:
   ## max 4 depth callback
   max-nested-callbacks: [2, 4]
   ## Require Constructors to Use Initial Caps
-  new-cap: [2, { "newIsCap": true }]
+  new-cap: [2, { "newIsCap": true, "capIsNew": false }]
   ## require parens for Constructor
   new-parens: 2
   ## use [] instead
