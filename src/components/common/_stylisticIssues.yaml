@@ -70,7 +70,7 @@ rules:
   ## put semi-colon
   semi: [2, "always"]
   # require space after keywords, eg 'for (..)'
-  space-after-keywords: 2
+  keyword-spacing: 2
   ## require space before blocks, eg 'function() {'
   space-before-blocks: [2, "always"]
   ## no space before function, eg. 'function()'
@@ -79,5 +79,3 @@ rules:
   space-in-parens: [2, "never"]
   ## require spaces operator like var sum = 1 + 1;
   space-infix-ops: 2
-  ## require spaces return, throw, case
-  space-return-throw-case: 2

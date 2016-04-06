@@ -3,13 +3,12 @@ Sharable eslint config created and used by CodingSans
 
 ## ESLINT Version
 
-This config created for eslint 1.10.*
-If you want to use eslint 2+ you must wait, or use a later version of this package.
+This config created for eslint 2.7.*
 
 ## Installation
 
 ```
-npm install --save-dev eslint@1.10 eslint-config-codingsans
+npm install --save-dev eslint@2.7 eslint-config-codingsans
 ```
 
 ## Usage
@@ -17,7 +16,7 @@ npm install --save-dev eslint@1.10 eslint-config-codingsans
 Choose a config:
 
 - `codingsans` - Default config, alias for argon.
-- `codingsans/argon` - Config created for working with Node 4.2 (Argon).
+- `codingsans/argon` - Config created for working with Node 4 (Argon).
 - `codingsans/babel` - Config created for babel ES6.
 - `codingsans/mochaTestExt` - Config created for mocha test folders (this is an extension config).
 - More to come...

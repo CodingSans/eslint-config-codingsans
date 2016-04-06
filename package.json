@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-codingsans",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "CodingSans Eslint config",
   "main": "index.js",
   "scripts": {
@@ -21,6 +21,6 @@
     "eslint-sharable-config-generator": "^1.0.1"
   },
   "peerDependencies": {
-    "eslint": "^1.10.3"
+    "eslint": "^2.7.0"
   }
 }
