@@ -5,7 +5,10 @@ extends:
 ## adds all of the es6 global variables.
 env:
   es6: true
+
+## parses the code with babel
 parser: "babel-eslint"
+
 rules:
   ##############################
   # Strict Mode
