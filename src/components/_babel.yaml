@@ -1,7 +1,11 @@
 extends:
   - ./es2015/_babelFeatures.yaml
   - ./es2015/_commonRules.yaml
-
+## http://eslint.org/docs/user-guide/configuring.html#specifying-environments
+## adds all of the es6 global variables.
+env:
+  es6: true
+parser: "babel-eslint"
 rules:
   ##############################
   # Strict Mode

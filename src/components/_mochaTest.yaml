@@ -34,3 +34,7 @@ rules:
   ## https://github.com/eslint/eslint/blob/master/docs/rules/new-cap.md
   ## Turned off for testing reasons
   new-cap: 0
+  ## Forbids lone blocks
+  ## https://github.com/eslint/eslint/blob/master/docs/rules/new-cap.md
+  ## Turned off for testing reasons
+  no-lone-blocks: 0
