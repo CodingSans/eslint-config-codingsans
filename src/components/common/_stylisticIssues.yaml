@@ -79,3 +79,5 @@ rules:
   space-in-parens: [2, "never"]
   ## require spaces operator like var sum = 1 + 1;
   space-infix-ops: 2
+  ## enforces a maximum number of statements allowed per line
+  max-statements-per-line: [2, { "max": 1 }]

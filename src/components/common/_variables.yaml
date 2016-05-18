@@ -17,3 +17,5 @@ rules:
   no-unused-vars: [2, { "vars": "local", "args": "after-used" }]
   ## disallow early use
   no-use-before-define: [2, "nofunc"]
+  ## disallow self assignment
+  no-self-assign: 2
