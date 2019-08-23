@@ -8,6 +8,9 @@
     "eslintconfig"
   ],
   "author": "LaTotty <latotty@codingsans.com>",
+  "contributors": [
+    "afgTheCat <fgabor@codingsans.com>"
+  ],
   "license": "MIT",
   "repository": "CodingSans/eslint-config-codingsans",
   "bugs": {
