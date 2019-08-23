@@ -1,26 +1,29 @@
 {
-  "name": "eslint-config-codingsans",
-  "version": "2.1.0",
+  "name": "@codingsans/eslint-config",
+  "version": "3.0.0",
   "description": "CodingSans Eslint config",
   "main": "index.js",
-  "scripts": {
-    "test": "exit 0",
-    "generate": "eslint-sharable-config-generator ./src/ ."
-  },
   "keywords": [
     "eslint",
     "eslintconfig"
   ],
   "author": "LaTotty <latotty@codingsans.com>",
+  "contributors": [
+    "LaTotty <latotty@codingsans.com>",
+    "afgTheCat <fgabor@codingsans.com>"
+  ],
   "license": "MIT",
   "repository": "CodingSans/eslint-config-codingsans",
   "bugs": {
     "url": "https://github.com/CodingSans/eslint-config-codingsans/issues"
   },
-  "devDependencies": {
-    "eslint-sharable-config-generator": "^1.0.1"
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
+    "eslint-config-prettier": "^6.1.0",
+    "eslint-plugin-prettier": "^3.1.0"
   },
   "peerDependencies": {
-    "eslint": "^2.7.0"
+    "eslint": "^5.0.0 || ^6.0.0"
   }
 }

@@ -29,3 +29,5 @@ node_modules
 *.js
 
 .npmrc
+
+*package-lock.json
