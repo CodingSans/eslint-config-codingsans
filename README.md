@@ -12,4 +12,3 @@ This config created for eslint 5.*
 ```
 npm install --save-dev @codingsans/eslint-config
 ```
-
