@@ -1,9 +1,8 @@
 language: node_js
 node_js:
   - "4.2"
-script:
-  - npm run generate
 deploy:
+  email: latotty@codingsans.com
   provider: npm
   api_key: $NPM_API_KEY
   skip_cleanup: true

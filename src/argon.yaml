@@ -1,4 +1,0 @@
-extends:
-  - ./components/_node.yaml
-  - ./components/_es2015Argon.yaml
-  - ./components/common/_common.yaml
