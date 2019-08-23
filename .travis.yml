@@ -1,8 +1,5 @@
-language: node_js
-node_js:
-  - "4.2"
 deploy:
-  email: latotty@codingsans.com
+  email: $NPM_EMAIL_ADDRESS
   provider: npm
   api_key: $NPM_API_KEY
   skip_cleanup: true
