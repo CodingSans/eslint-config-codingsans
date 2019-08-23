@@ -12,6 +12,9 @@
     "LaTotty <latotty@codingsans.com>",
     "afgTheCat <fgabor@codingsans.com>"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "MIT",
   "repository": "CodingSans/eslint-config-codingsans",
   "bugs": {
