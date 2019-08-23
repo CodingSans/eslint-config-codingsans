@@ -12,7 +12,7 @@ This config created for eslint 5/6
 ## Installation
 
 ```
-npm install --save-dev @codingsans/eslint-config
+npm install --save-dev eslint prettier @codingsans/eslint-config
 ```
 
 ## Usage
@@ -21,6 +21,19 @@ Add `.eslintrc.json`:
 ```
 {
   "extends": ["@codingsans/eslint-config/typescript-recommended"]
+}
+```
+
+Add `.prettierrc`
+```
+{
+  "bracketSpacing": true,
+  "trailingComma": "all",
+  "singleQuote": true,
+  "semi": true,
+  "useTabs": false,
+  "tabWidth": 2,
+  "printWidth": 120
 }
 ```
 
