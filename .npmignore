@@ -1,1 +1,3 @@
 .nvmrc
+.travis.yml
+.editorconfig
