@@ -15,6 +15,7 @@ module.exports = {
   },
   rules: {
     eqeqeq: 'error',
+    curly: 'error',
     'prefer-template': 'error',
     '@typescript-eslint/no-use-before-define': 'off',
     '@typescript-eslint/no-misused-promises': 'warn',
@@ -25,5 +26,6 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': ['warn', { allowExpressions: true }],
     '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
     '@typescript-eslint/array-type': ['error', { array: true }],
+    '@typescript-eslint/no-floating-promises': 'error'
   },
 };
