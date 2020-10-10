@@ -7,10 +7,14 @@ Sharable eslint config created and used by CodingSans
 
 ## ESLINT Version
 
-This config created for eslint 5/6
+This config created for eslint 6/7
 
 ## Installation
 
+```
+yarn add -D eslint prettier @codingsans/eslint-config
+```
+or
 ```
 npm install --save-dev eslint prettier @codingsans/eslint-config
 ```
@@ -21,19 +25,6 @@ Add `.eslintrc.json`:
 ```
 {
   "extends": ["@codingsans/eslint-config/typescript-recommended"]
-}
-```
-
-Add `.prettierrc`
-```
-{
-  "bracketSpacing": true,
-  "trailingComma": "all",
-  "singleQuote": true,
-  "semi": true,
-  "useTabs": false,
-  "tabWidth": 2,
-  "printWidth": 120
 }
 ```
 

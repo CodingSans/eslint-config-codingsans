@@ -1,1 +1,1 @@
-module.exports = require('./typescript-recommended');
+module.exports = {};
