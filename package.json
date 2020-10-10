@@ -1,6 +1,6 @@
 {
   "name": "@codingsans/eslint-config",
-  "version": "4.0.0",
+  "version": "5.0.0-beta.0",
   "description": "CodingSans Eslint config",
   "main": "index.js",
   "keywords": [
