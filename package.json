@@ -3,6 +3,9 @@
   "version": "5.0.0-beta.0",
   "description": "CodingSans Eslint config",
   "main": "index.js",
+  "files": [
+    "*.js"
+  ],
   "keywords": [
     "eslint",
     "eslintconfig"
