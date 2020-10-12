@@ -70,16 +70,19 @@ module.exports = {
         selector: 'memberLike',
         modifiers: ['private'],
         format: ['camelCase'],
-        leadingUnderscore: 'require',
+        leadingUnderscore: 'allow',
       },
-
-      { selector: 'typeLike', format: ['PascalCase'] },
       { selector: 'typeParameter', format: ['PascalCase'], prefix: ['T'] },
 
       {
+        selector: 'typeLike',
+        format: ['PascalCase'],
+        custom: { regex: '^[IT][A-Z]', match: false },
+      },
+      {
         selector: 'interface',
         format: ['PascalCase'],
-        custom: { regex: '^I[A-Z]', match: false },
+        custom: { regex: '^[IT][A-Z]', match: false },
       },
     ],
 
