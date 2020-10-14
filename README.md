@@ -32,3 +32,21 @@ Run:
 ```
 eslint . --ext .ts
 ```
+
+## VSCode settings
+
+Add the `dbaeumer.vscode-eslint` extension to the vscode, and thats all.
+
+You could add this to your settings, to have auto-format, and auto import organize.
+```
+{
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "eslint.enable": true,
+  "editor.codeActionsOnSave": [
+    "source.organizeImports",
+    "source.fixAll"
+  ],
+}
+```
