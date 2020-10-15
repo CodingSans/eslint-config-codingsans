@@ -64,7 +64,7 @@ module.exports = {
         format: ['camelCase'],
         leadingUnderscore: 'allow',
       },
-
+      { selector: 'enumMember', format: ['UPPER_CASE'] },
       { selector: 'memberLike', format: ['camelCase'] },
       {
         selector: 'memberLike',
