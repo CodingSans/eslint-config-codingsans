@@ -56,12 +56,16 @@ module.exports = {
       { selector: 'variableLike', format: ['camelCase'] },
       {
         selector: 'variable',
-        format: ['camelCase', 'UPPER_CASE'],
+        format: ['camelCase', 'UPPER_CASE', 'PascalCase'],
         leadingUnderscore: 'allow',
       },
       {
+        selector: 'function',
+        format: ['camelCase', 'PascalCase'],
+      },
+      {
         selector: 'parameter',
-        format: ['camelCase'],
+        format: ['camelCase', 'PascalCase'],
         leadingUnderscore: 'allow',
       },
       { selector: 'enumMember', format: ['UPPER_CASE'] },
@@ -73,7 +77,6 @@ module.exports = {
         leadingUnderscore: 'allow',
       },
       { selector: 'typeParameter', format: ['PascalCase'], prefix: ['T'] },
-
       {
         selector: 'typeLike',
         format: ['PascalCase'],
