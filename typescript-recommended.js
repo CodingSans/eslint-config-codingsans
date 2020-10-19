@@ -69,7 +69,7 @@ module.exports = {
         leadingUnderscore: 'allow',
       },
       { selector: 'enumMember', format: ['UPPER_CASE'] },
-      { selector: 'memberLike', format: ['camelCase'] },
+      { selector: 'memberLike', format: ['camelCase', 'PascalCase', 'UPPER_CASE'] },
       {
         selector: 'memberLike',
         modifiers: ['private'],
