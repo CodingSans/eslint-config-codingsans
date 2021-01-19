@@ -1,6 +1,6 @@
 {
   "name": "@codingsans/eslint-config",
-  "version": "5.1.0",
+  "version": "5.2.0",
   "description": "CodingSans Eslint config",
   "main": "index.js",
   "files": [
