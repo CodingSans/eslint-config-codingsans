@@ -37,7 +37,13 @@ module.exports = {
     '@typescript-eslint/unbound-method': 'off',
     '@typescript-eslint/no-empty-interface': 'off',
     '@typescript-eslint/explicit-function-return-type': ['warn', { allowExpressions: true }],
-    '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
+    '@typescript-eslint/no-unused-vars': [
+      'warn',
+      {
+        argsIgnorePattern: '^_',
+        varsIgnorePattern: '^_',
+      },
+    ],
     '@typescript-eslint/array-type': ['error', { array: true }],
 
     '@typescript-eslint/explicit-module-boundary-types': [
