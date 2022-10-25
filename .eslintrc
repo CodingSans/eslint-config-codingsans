@@ -2,15 +2,9 @@
   "overrides": [
     {
       "files": "*.js",
-      "extends": [
-        "./typescript-recommended.js",
-        "plugin:node/recommended"
-      ],
+      "extends": ["./ts-recommended.js", "plugin:node/recommended"],
       "rules": {
-        "node/exports-style": [
-          "error",
-          "module.exports"
-        ]
+        "node/exports-style": ["error", "module.exports"]
       }
     }
   ]
