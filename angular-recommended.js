@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['./ts-recommended.js', ''],
+  extends: ['./ts-recommended.js'],
   overrides: [
     {
       files: ['*.ts'],

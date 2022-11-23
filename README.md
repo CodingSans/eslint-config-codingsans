@@ -7,7 +7,7 @@ Sharable eslint config created and used by CodingSans
 
 ## ESLINT Version
 
-This config created for eslint 6/7
+This config created for eslint 8
 
 ## Installation
 
