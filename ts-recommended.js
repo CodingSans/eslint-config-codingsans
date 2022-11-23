@@ -4,14 +4,17 @@ module.exports = {
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
-    'prettier/@typescript-eslint',
+    'plugin:@typescript-eslint/strict',
+    'prettier',
     'plugin:prettier/recommended',
+    'plugin:import/recommended',
+    'plugin:import/typescript',
   ],
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     project: './tsconfig.json',
     tsconfigRootDir: '.',
-    ecmaVersion: 2020,
-    sourceType: 'module',
+    ecmaVersion: 'latest',
   },
   rules: {
     'prettier/prettier': [
@@ -28,41 +31,43 @@ module.exports = {
     ],
     eqeqeq: 'error',
     curly: 'error',
-    'no-trailing-spaces': 'error',
     'eol-last': ['error', 'always'],
     'prefer-template': 'error',
-    '@typescript-eslint/no-use-before-define': 'off',
-    '@typescript-eslint/no-misused-promises': 'warn',
-    '@typescript-eslint/require-await': 'off',
-    '@typescript-eslint/unbound-method': 'off',
-    '@typescript-eslint/no-empty-interface': 'off',
-    '@typescript-eslint/explicit-function-return-type': ['warn', { allowExpressions: true }],
+    '@typescript-eslint/no-use-before-define': 'error',
+    '@typescript-eslint/no-misused-promises': 'error',
+    '@typescript-eslint/promise-function-async': 'error',
+    '@typescript-eslint/return-await': 'error',
+    '@typescript-eslint/no-empty-interface': 'error',
+    '@typescript-eslint/no-useless-empty-export': 'error',
+    '@typescript-eslint/explicit-function-return-type': ['error', { allowExpressions: true }],
+    '@typescript-eslint/explicit-module-boundary-types': 'error',
+    '@typescript-eslint/no-explicit-any': ['warn', { fixToUnknown: true }],
+    '@typescript-eslint/no-inferrable-types': 'off',
+    '@typescript-eslint/no-unused-expressions': 'error',
     '@typescript-eslint/no-unused-vars': [
-      'warn',
+      'error',
       {
         argsIgnorePattern: '^_',
         varsIgnorePattern: '^_',
       },
     ],
-    '@typescript-eslint/array-type': ['error', { array: true }],
-
-    '@typescript-eslint/explicit-module-boundary-types': [
-      'warn',
-      {
-        allowTypedFunctionExpressions: true,
-        allowHigherOrderFunctions: true,
-        allowDirectConstAssertionInArrowFunctions: true,
-        shouldTrackReferences: true,
-      },
-    ],
     '@typescript-eslint/naming-convention': [
-      'warn',
+      'error',
       { selector: 'default', format: ['camelCase'] },
 
       { selector: 'variableLike', format: ['camelCase'] },
       {
         selector: 'variable',
-        format: ['camelCase', 'UPPER_CASE', 'PascalCase'],
+        format: ['camelCase', 'UPPER_CASE'],
+        leadingUnderscore: 'allow',
+      },
+      {
+        selector: ['objectLiteralProperty', 'typeProperty', 'parameterProperty'],
+        format: [null],
+      },
+      {
+        selector: 'class',
+        format: ['PascalCase'],
         leadingUnderscore: 'allow',
       },
       {
@@ -94,25 +99,22 @@ module.exports = {
         custom: { regex: '^[IT][A-Z]', match: false },
       },
     ],
-
     '@typescript-eslint/restrict-template-expressions': [
-      'warn',
+      'error',
       {
         allowNumber: true,
-        allowBoolean: false,
+        allowBoolean: true,
         allowAny: false,
         allowNullish: false,
+        allowRegExp: false,
       },
     ],
-    '@typescript-eslint/prefer-optional-chain': ['warn'],
-
-    '@typescript-eslint/prefer-ts-expect-error': ['error'],
-    '@typescript-eslint/promise-function-async': ['warn'],
-    '@typescript-eslint/prefer-string-starts-ends-with': ['error'],
-    '@typescript-eslint/prefer-reduce-type-parameter': ['warn'],
-    '@typescript-eslint/prefer-includes': ['error'],
-    '@typescript-eslint/prefer-for-of': ['error'],
-    '@typescript-eslint/prefer-enum-initializers': ['warn'],
-    '@typescript-eslint/no-loop-func': ['warn'],
+    '@typescript-eslint/prefer-readonly': 'warn',
+    'import/order': [
+      'error',
+      {
+        groups: ['index', 'sibling', 'parent', 'internal', 'external', 'builtin', 'object', 'type'],
+      },
+    ],
   },
 };
