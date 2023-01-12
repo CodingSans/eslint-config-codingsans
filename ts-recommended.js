@@ -63,7 +63,7 @@ module.exports = {
       },
       {
         selector: ['objectLiteralProperty', 'typeProperty', 'parameterProperty'],
-        format: [null],
+        format: null,
       },
       {
         selector: 'class',
